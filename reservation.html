@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Le Quai Antique:Reservation</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/datepicker/css/datepicker.css">
+        <link rel="stylesheet" type="text/css" href="reservation.css"/>
+        <script src="https://unpkg.com/datepicker/js/datepicker.js">
+
+        </script>
+</head>
+<body>
+    <header>
+        <h1>Quand est-ce que vous voulez venir chez nous?</h1>
+    </header>
+    <main>
+        <div class="form-label">
+            <form id="form_reservation" method="post" action="reservation.py">
+                <div class="allergies_select">
+                <label for="allergies">A quel aliment etes-vous allergique ?</label>
+                <select id="allergies" name="allergies" required>
+                    <option value="0">--Choisissez une option--</option>
+                    <option value="1">gluten &#127838;</option>
+                    <option value="2">arachide &#127792;</option>
+                    <option value="3">fruits a coque &#129372;</option>
+                    <option value="4">poisssons&#x1f41f;</option>
+                    <option value="5">A plusieurs aliments dans la liste ou autre</option>
+                </select>
+                </div>
+                <div class="vegan_select">
+                    <label for="vegan">Etes-vous vegetarien(ne)?</label>
+                    <select id="vegan" name="vegan required">
+                        <option value="0">--Choisissez une option--</option>
+                        <option value="1">OUI</option>
+                        <option value="2">NON</option>
+                    </select>
+                </div>
+                <div class="time_select">
+                    <label for="time">Choisissez une heure a laquelle vous voulez reserver</label>
+                    <select id="time" name="time" required>
+                        <option value="0">--Choisissez une option--</option>
+                        <option  value="1">12h</option>
+                        <option  value="2">12h15</option>
+                        <option  value="3">12h30</option>
+                        <option  value="4">12h45</option>
+                        <option  value="5">13h</option>
+                        <option  value="6">13h15</option>
+                        <option  value="7">13h30</option>
+                        <option  value="8">13h45</option>
+                        <option  value="9">14h</option>
+                        <option  value="10">14h15</option>
+                        <option  value="11">14h30</option>
+                        <option  value="12">14h45</option>
+                        <option  value="13">19h</option>
+                        <option  value="14">19h15</option>
+                        <option  value="15">19h30</option>
+                        <option  value="16">19h45</option>
+                        <option  value="17">20h</option>
+                        <option  value="18">20h15</option>
+                        <option  value="19">20h30</option>
+                        <option  value="20">20h45</option>
+                        <option  value="21">21h</option>
+                        <option  value="22">21h15</option>
+                        <option  value="23">21h30</option>
+                        <option  value="24">21h45</option>
+                        <option  value="25">22h00</option>
+                        <option value="26">22h15</option>
+                    </select>
+                </div>
+                <div class="calendar">
+                    <label for="date">Quand voulez-vous reserver ?</label>
+                    <input type="datetime" id="date">
+                </div>
+                <div class="button-submit">
+                    <button type="button" class="btn-outline-success" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="back_to_homepage">
+            <button class="btn btn-outline-danger" type="button" onclick="location.href='accueil_resto.html'">Retour a l'accueil</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;ECF Mai 2023 - Ruben SLAMA</p>
+    </footer>
+</body>
+</html>
