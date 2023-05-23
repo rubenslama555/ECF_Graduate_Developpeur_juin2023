@@ -1,5 +1,5 @@
 # ECF_Graduate_Developpeur_juin2023
-Evaluation de cours de formation ayant pour sujet la creation du site du restaurant le Quai antique.
+Evaluation de cours de formation ayant pour sujet la creation du site du restaurant le Quai antique qui est un restaurant de specialite Savoyarde.
 # Comment l'utiliser ?
 1.Ouvrez le fichier accueil_resto.html dans votre navigateur.
 
